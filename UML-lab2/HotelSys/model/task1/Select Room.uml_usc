@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<xmi:XMI xmi:version='2.1' xmlns:xmi='http://schema.omg.org/spec/XMI/2.1' xmlns:uml='http://schema.omg.org/spec/UML/2.1.1/uml.xml'>
+ <documentation exporter='Oracle JDeveloper' exporterVersion='11.1.2.3.0'/>
+ <uml:UseCase xmi:uuid='urn:uuid:15154a6b-8950-4c1b-b179-d02a8944f9e1'
+   isAbstract='false'
+   isLeaf='false'
+   name='Select Room'
+   visibility='public'>
+  <subject href='urn:uuid:32a8ad09-323d-4416-8d73-a893ce9933bd'/>
+ </uml:UseCase>
+</xmi:XMI>

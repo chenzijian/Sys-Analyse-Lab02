@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<xmi:XMI xmi:version='2.1' xmlns:xmi='http://schema.omg.org/spec/XMI/2.1' xmlns:uml='http://schema.omg.org/spec/UML/2.1.1/uml.xml'>
+ <documentation exporter='Oracle JDeveloper' exporterVersion='11.1.2.3.0'/>
+ <uml:UseCase xmi:uuid='urn:uuid:c8b8337b-c272-402c-9c97-bcbb6f06a901'
+   isAbstract='false'
+   isLeaf='false'
+   name='Reserve Hotel'
+   visibility='public'>
+  <subject href='urn:uuid:32a8ad09-323d-4416-8d73-a893ce9933bd'/>
+  <include xmi:uuid='urn:uuid:8999fb57-71d7-411c-8c0c-84c1ed9bbb7a'>
+   <addition href='urn:uuid:0e3f149b-d500-4c90-8af2-bd48c8b35d69'/>
+  </include>
+  <include xmi:uuid='urn:uuid:bd07827a-f39b-47ab-9094-0be7455d6728'>
+   <addition href='urn:uuid:f865b405-8f34-4222-9a7a-3d7f90416429'/>
+  </include>
+  <include xmi:uuid='urn:uuid:705c1e6b-595d-4699-8054-ab87916cd73b'>
+   <addition href='urn:uuid:15154a6b-8950-4c1b-b179-d02a8944f9e1'/>
+  </include>
+ </uml:UseCase>
+</xmi:XMI>

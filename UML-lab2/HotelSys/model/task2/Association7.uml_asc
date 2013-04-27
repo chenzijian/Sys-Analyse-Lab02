@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<xmi:XMI xmi:version='2.1' xmlns:xmi='http://schema.omg.org/spec/XMI/2.1' xmlns:uml='http://schema.omg.org/spec/UML/2.1.1/uml.xml'>
+ <documentation exporter='Oracle JDeveloper' exporterVersion='11.1.2.3.0'/>
+ <uml:Association xmi:uuid='urn:uuid:2dfba930-48c8-4f4c-b8e4-d7a468c68d9f'
+   isAbstract='false'
+   isDerived='false'
+   isLeaf='false'
+   name='Association7'
+   visibility='public'>
+  <memberEnd href='urn:uuid:ca06d029-a28c-4c59-be9c-ed136ec90d3f'/>
+  <memberEnd href='urn:uuid:dcb2b337-ec11-4ff7-89b6-1ee7dfc96c07'/>
+  <ownedEnd xmi:uuid='urn:uuid:ca06d029-a28c-4c59-be9c-ed136ec90d3f'
+    isDerived='false'
+    isDerivedUnion='false'
+    isLeaf='false'
+    isOrdered='false'
+    isReadOnly='false'
+    isStatic='false'
+    isUnique='true'
+    name=''
+    aggregation='none'>
+   <association href='urn:uuid:2dfba930-48c8-4f4c-b8e4-d7a468c68d9f'/>
+   <type href='urn:uuid:08278b56-1a92-43fe-99cf-d6d4c860fa50'/>
+   <lowerValue xmi:type='uml:LiteralInteger' xmi:uuid='urn:uuid:f43985e9-1605-4361-b751-775f68e44516'
+     value='1'
+     visibility='public'/>
+   <upperValue xmi:type='uml:LiteralUnlimitedNatural' xmi:uuid='urn:uuid:53b8f3be-4766-4779-a53a-912c5e04ba86'
+     value='1'
+     visibility='public'/>
+  </ownedEnd>
+  <ownedEnd xmi:uuid='urn:uuid:dcb2b337-ec11-4ff7-89b6-1ee7dfc96c07'
+    isDerived='false'
+    isDerivedUnion='false'
+    isLeaf='false'
+    isOrdered='false'
+    isReadOnly='false'
+    isStatic='false'
+    isUnique='true'
+    name=''
+    aggregation='none'>
+   <association href='urn:uuid:2dfba930-48c8-4f4c-b8e4-d7a468c68d9f'/>
+   <type href='urn:uuid:55717f58-4219-4631-b335-306f8ea6ed7d'/>
+   <lowerValue xmi:type='uml:LiteralInteger' xmi:uuid='urn:uuid:923a371f-a0ad-4961-add2-49951d732835'
+     value='1'
+     visibility='public'/>
+   <upperValue xmi:type='uml:LiteralUnlimitedNatural' xmi:uuid='urn:uuid:e88b9b39-4240-4f5c-8674-c31de6607949'
+     value='1'
+     visibility='public'/>
+  </ownedEnd>
+ </uml:Association>
+</xmi:XMI>

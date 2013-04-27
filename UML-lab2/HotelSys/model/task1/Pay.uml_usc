@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<xmi:XMI xmi:version='2.1' xmlns:xmi='http://schema.omg.org/spec/XMI/2.1' xmlns:uml='http://schema.omg.org/spec/UML/2.1.1/uml.xml'>
+ <documentation exporter='Oracle JDeveloper' exporterVersion='11.1.2.3.0'/>
+ <uml:UseCase xmi:uuid='urn:uuid:51fe6568-f121-47d9-99e1-26229e5a8ef0'
+   isAbstract='false'
+   isLeaf='false'
+   name='Pay'
+   visibility='public'>
+  <subject href='urn:uuid:32a8ad09-323d-4416-8d73-a893ce9933bd'/>
+  <include xmi:uuid='urn:uuid:9802f4fd-f8d8-4959-96f9-d3e6048ce0b8'>
+   <addition href='urn:uuid:9576e96a-38d8-43be-9174-e464af18940b'/>
+  </include>
+ </uml:UseCase>
+</xmi:XMI>

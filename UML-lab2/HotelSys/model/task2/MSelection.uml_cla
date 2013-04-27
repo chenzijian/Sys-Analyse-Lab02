@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<xmi:XMI xmi:version='2.1' xmlns:xmi='http://schema.omg.org/spec/XMI/2.1' xmlns:uml='http://schema.omg.org/spec/UML/2.1.1/uml.xml'>
+ <documentation exporter='Oracle JDeveloper' exporterVersion='11.1.2.3.0'/>
+ <uml:Class xmi:uuid='urn:uuid:a34ee2cd-2a30-4f26-b40a-b152e8eb66ad'
+   isAbstract='false'
+   isActive='false'
+   isLeaf='false'
+   name='MSelection'
+   visibility='public'>
+  <generalization xmi:uuid='urn:uuid:e1bcc263-a4cf-4a2c-82ec-64a63995cc5d'>
+   <general href='urn:uuid:d183b86b-b740-4cae-adec-ac4c2d4f028d'/>
+  </generalization>
+  <ownedAttribute xmi:uuid='urn:uuid:63d5e3f0-4309-4150-9635-14b228221ad2'
+    isDerived='false'
+    isDerivedUnion='false'
+    isLeaf='false'
+    isOrdered='false'
+    isReadOnly='false'
+    isStatic='false'
+    isUnique='true'
+    name='SelectedStr'
+    aggregation='none'
+    visibility='package'>
+   <type href='mof:/string:uml:Type'/>
+   <lowerValue xmi:type='uml:LiteralInteger' xmi:uuid='urn:uuid:2272f529-7598-4863-974d-d0af4f18fd28'
+     value='1'
+     visibility='public'/>
+   <upperValue xmi:type='uml:LiteralUnlimitedNatural' xmi:uuid='urn:uuid:aa0c4adb-e3ae-4907-b7b4-7bc109a68acb'
+     value='1'
+     visibility='public'/>
+  </ownedAttribute>
+  <ownedOperation xmi:uuid='urn:uuid:c5e5396f-7c7b-462b-ba8a-1809f8c6f880'
+    isAbstract='false'
+    isLeaf='false'
+    isQuery='false'
+    isStatic='false'
+    name='Search_SelectMode'
+    concurrency='sequential'
+    visibility='package'>
+   <ownedParameter xmi:uuid='urn:uuid:e4db4241-049f-4d6f-a02d-bf229d8d75a5'
+     isException='false'
+     isOrdered='false'
+     isStream='false'
+     isUnique='true'
+     direction='return'>
+    <type href='mof:/void:uml:Type'/>
+   </ownedParameter>
+  </ownedOperation>
+ </uml:Class>
+</xmi:XMI>
