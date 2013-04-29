@@ -34,9 +34,10 @@
     isReadOnly='false'
     isStatic='false'
     isUnique='true'
-    name='SearchResult'
+    name='SearchResult[]'
     aggregation='none'
     visibility='package'>
+   <type href='urn:uuid:bc9c5d28-f877-485e-8f87-03bb1470db2f'/>
    <lowerValue xmi:type='uml:LiteralInteger' xmi:uuid='urn:uuid:7e7289b8-c26a-43be-873d-cb26006e4c33'
      value='1'
      visibility='public'/>
@@ -52,13 +53,22 @@
     name='Search_Normal'
     concurrency='sequential'
     visibility='package'>
+   <ownedParameter xmi:uuid='urn:uuid:cc45f199-8496-42a2-b17c-37bdd2e74399'
+     isException='false'
+     isOrdered='false'
+     isStream='false'
+     isUnique='true'
+     name='SearchStr'
+     direction='in'>
+    <type href='mof:/string:uml:Type'/>
+   </ownedParameter>
    <ownedParameter xmi:uuid='urn:uuid:36ec241e-59da-4e1b-8c72-fc03a8df792b'
      isException='false'
      isOrdered='false'
      isStream='false'
      isUnique='true'
      direction='return'>
-    <type href='mof:/void:uml:Type'/>
+    <type href='mof:/*HotelInfo:uml:Type'/>
    </ownedParameter>
   </ownedOperation>
  </uml:Class>

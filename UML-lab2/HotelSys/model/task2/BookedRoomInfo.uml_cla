@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='UTF-8' standalone='yes'?>
 <xmi:XMI xmi:version='2.1' xmlns:xmi='http://schema.omg.org/spec/XMI/2.1' xmlns:uml='http://schema.omg.org/spec/UML/2.1.1/uml.xml'>
  <documentation exporter='Oracle JDeveloper' exporterVersion='11.1.2.3.0'/>
- <uml:Class xmi:uuid='urn:uuid:f418ecdc-4181-4d2d-a1bc-de49b29e245b'
+ <uml:Class xmi:uuid='urn:uuid:29a9b9fb-f3e9-4aa5-8bf7-f703194335fc'
    isAbstract='false'
    isActive='false'
    isLeaf='false'
-   name='PayerInfo'
+   name='BookedRoomInfo'
    visibility='public'>
-  <ownedAttribute xmi:uuid='urn:uuid:855bb477-b6ac-4106-9c28-f8537f355cf8'
+  <ownedAttribute xmi:uuid='urn:uuid:98e39311-ca86-40b8-bfd4-ea658728063e'
     isDerived='false'
     isDerivedUnion='false'
     isLeaf='false'
@@ -15,18 +15,18 @@
     isReadOnly='false'
     isStatic='false'
     isUnique='true'
-    name='Payer_Name'
+    name='BookedRoom_Room_ID'
     aggregation='none'
     visibility='package'>
-   <type href='mof:/string:uml:Type'/>
-   <lowerValue xmi:type='uml:LiteralInteger' xmi:uuid='urn:uuid:69b596e0-45f1-4910-a4b3-c53d6f832233'
+   <type href='mof:/int:uml:Type'/>
+   <lowerValue xmi:type='uml:LiteralInteger' xmi:uuid='urn:uuid:e7a7a3f8-c4f7-446f-9ea3-ec455df2d584'
      value='1'
      visibility='public'/>
-   <upperValue xmi:type='uml:LiteralUnlimitedNatural' xmi:uuid='urn:uuid:3d168770-ce92-46d2-8812-63576da68b64'
+   <upperValue xmi:type='uml:LiteralUnlimitedNatural' xmi:uuid='urn:uuid:2de6ebfb-82ec-4516-9f04-ef981467b2c1'
      value='1'
      visibility='public'/>
   </ownedAttribute>
-  <ownedAttribute xmi:uuid='urn:uuid:c7012add-d809-4045-9545-784f6d2db92f'
+  <ownedAttribute xmi:uuid='urn:uuid:4652b531-7818-4db5-9a2e-e779be4a3acc'
     isDerived='false'
     isDerivedUnion='false'
     isLeaf='false'
@@ -34,18 +34,18 @@
     isReadOnly='false'
     isStatic='false'
     isUnique='true'
-    name='Payer_Email'
+    name='BookedRoom_UserName'
     aggregation='none'
     visibility='package'>
    <type href='mof:/string:uml:Type'/>
-   <lowerValue xmi:type='uml:LiteralInteger' xmi:uuid='urn:uuid:4fa395eb-14a8-48fb-a424-b8cb6853e001'
+   <lowerValue xmi:type='uml:LiteralInteger' xmi:uuid='urn:uuid:fa8a62f9-5ae6-4134-b303-c512b1c69e97'
      value='1'
      visibility='public'/>
-   <upperValue xmi:type='uml:LiteralUnlimitedNatural' xmi:uuid='urn:uuid:5bc8f2b8-00a5-4c6d-804f-02bca6317bce'
+   <upperValue xmi:type='uml:LiteralUnlimitedNatural' xmi:uuid='urn:uuid:86ac1abc-f6fb-4639-9b77-e5576f938e94'
      value='1'
      visibility='public'/>
   </ownedAttribute>
-  <ownedAttribute xmi:uuid='urn:uuid:c3b165d3-37ad-4611-8373-9c74b27ce7f2'
+  <ownedAttribute xmi:uuid='urn:uuid:3ea50a67-12a5-4105-94a5-2083b83f40aa'
     isDerived='false'
     isDerivedUnion='false'
     isLeaf='false'
@@ -53,18 +53,18 @@
     isReadOnly='false'
     isStatic='false'
     isUnique='true'
-    name='Payer_CardID'
+    name='BookedRoom_Hotel_ID'
     aggregation='none'
     visibility='package'>
-   <type href='mof:/string:uml:Type'/>
-   <lowerValue xmi:type='uml:LiteralInteger' xmi:uuid='urn:uuid:ff322b66-9798-47a8-981d-8d66043e49a4'
+   <type href='mof:/int:uml:Type'/>
+   <lowerValue xmi:type='uml:LiteralInteger' xmi:uuid='urn:uuid:c7580ba4-1f92-4516-ba5f-3e8ab1e65e5e'
      value='1'
      visibility='public'/>
-   <upperValue xmi:type='uml:LiteralUnlimitedNatural' xmi:uuid='urn:uuid:18c80206-9df5-4483-8e46-2fbabaa7975f'
+   <upperValue xmi:type='uml:LiteralUnlimitedNatural' xmi:uuid='urn:uuid:115aabb9-a29a-4c86-b481-aa13e2b63fe6'
      value='1'
      visibility='public'/>
   </ownedAttribute>
-  <ownedAttribute xmi:uuid='urn:uuid:bd592fcc-e9a6-4188-9219-9cd90b6e0271'
+  <ownedAttribute xmi:uuid='urn:uuid:5c97766d-51bd-426c-85bf-959a0b939841'
     isDerived='false'
     isDerivedUnion='false'
     isLeaf='false'
@@ -72,14 +72,14 @@
     isReadOnly='false'
     isStatic='false'
     isUnique='true'
-    name='Payer_CardType'
+    name='BookedRoom_UserSpecialRequest'
     aggregation='none'
     visibility='package'>
    <type href='mof:/string:uml:Type'/>
-   <lowerValue xmi:type='uml:LiteralInteger' xmi:uuid='urn:uuid:cc2628d5-7972-44ad-8c6f-626025b9cc1d'
+   <lowerValue xmi:type='uml:LiteralInteger' xmi:uuid='urn:uuid:607333eb-d5aa-46fa-b91b-861b25b32dbf'
      value='1'
      visibility='public'/>
-   <upperValue xmi:type='uml:LiteralUnlimitedNatural' xmi:uuid='urn:uuid:59823d46-f79b-4509-a81a-3b04aa21d9e0'
+   <upperValue xmi:type='uml:LiteralUnlimitedNatural' xmi:uuid='urn:uuid:59806cbd-c9a4-4ad6-ab72-3d366bc0cd91'
      value='1'
      visibility='public'/>
   </ownedAttribute>

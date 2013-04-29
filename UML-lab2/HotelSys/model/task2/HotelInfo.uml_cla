@@ -15,9 +15,10 @@
     isReadOnly='false'
     isStatic='false'
     isUnique='true'
-    name='HotelName'
+    name='Hotel_Name'
     aggregation='none'
     visibility='package'>
+   <type href='mof:/string:uml:Type'/>
    <lowerValue xmi:type='uml:LiteralInteger' xmi:uuid='urn:uuid:6a8a6c50-826b-4513-9941-8c60dfe757f0'
      value='1'
      visibility='public'/>
@@ -33,9 +34,10 @@
     isReadOnly='false'
     isStatic='false'
     isUnique='true'
-    name='HotelDescription'
+    name='Hotel_Description'
     aggregation='none'
     visibility='package'>
+   <type href='mof:/string:uml:Type'/>
    <lowerValue xmi:type='uml:LiteralInteger' xmi:uuid='urn:uuid:8e0daab9-0862-4f73-b4e9-562f201ade56'
      value='1'
      visibility='public'/>
@@ -51,13 +53,52 @@
     isReadOnly='false'
     isStatic='false'
     isUnique='true'
-    name='HotelValidRoomArr'
+    name='Hotel_ID'
     aggregation='none'
     visibility='package'>
+   <type href='mof:/int:uml:Type'/>
    <lowerValue xmi:type='uml:LiteralInteger' xmi:uuid='urn:uuid:6f572b5a-fe53-4bd8-8ed7-7146f0f1d641'
      value='1'
      visibility='public'/>
    <upperValue xmi:type='uml:LiteralUnlimitedNatural' xmi:uuid='urn:uuid:5282b33e-6dc1-4a0e-af41-62acb6378750'
+     value='1'
+     visibility='public'/>
+  </ownedAttribute>
+  <ownedAttribute xmi:uuid='urn:uuid:5e5e6c8b-596b-45d2-b13a-87ab26425681'
+    isDerived='false'
+    isDerivedUnion='false'
+    isLeaf='false'
+    isOrdered='false'
+    isReadOnly='false'
+    isStatic='false'
+    isUnique='true'
+    name='Hotel_Place'
+    aggregation='none'
+    visibility='package'>
+   <type href='mof:/string:uml:Type'/>
+   <lowerValue xmi:type='uml:LiteralInteger' xmi:uuid='urn:uuid:6ef2f9da-9795-4589-823c-f8b566e92ba3'
+     value='1'
+     visibility='public'/>
+   <upperValue xmi:type='uml:LiteralUnlimitedNatural' xmi:uuid='urn:uuid:1a888c10-cf15-4439-8a9c-e7775f82f7b3'
+     value='1'
+     visibility='public'/>
+  </ownedAttribute>
+  <ownedAttribute xmi:uuid='urn:uuid:6ff30daa-0213-4410-95b0-24c1d84ce44b'
+    isDerived='false'
+    isDerivedUnion='false'
+    isLeaf='false'
+    isOrdered='false'
+    isReadOnly='false'
+    isStatic='false'
+    isUnique='true'
+    name='Hotel_Stars'
+    aggregation='none'
+    visibility='package'>
+   <type href='mof:/int:uml:Type'/>
+   <lowerValue xmi:type='uml:LiteralInteger' xmi:uuid='urn:uuid:39a61acc-d967-4a13-8b64-b05279fc9744'
+     value='1'
+     visibility='public'/>
+   <upperValue xmi:type='uml:LiteralUnlimitedNatural' xmi:uuid='urn:uuid:3a014cb0-0caf-4cee-8aa4-f501b8fde723'
      value='1'
      visibility='public'/>
   </ownedAttribute>

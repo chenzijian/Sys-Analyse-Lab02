@@ -7,7 +7,7 @@
    isLeaf='false'
    name='MSelection'
    visibility='public'>
-  <generalization xmi:uuid='urn:uuid:e1bcc263-a4cf-4a2c-82ec-64a63995cc5d'>
+  <generalization xmi:uuid='urn:uuid:b98514db-70d0-4ccb-a7f8-d6db57c7a593'>
    <general href='urn:uuid:d183b86b-b740-4cae-adec-ac4c2d4f028d'/>
   </generalization>
   <ownedAttribute xmi:uuid='urn:uuid:63d5e3f0-4309-4150-9635-14b228221ad2'
@@ -37,13 +37,22 @@
     name='Search_SelectMode'
     concurrency='sequential'
     visibility='package'>
+   <ownedParameter xmi:uuid='urn:uuid:b481880d-2e91-417e-84f9-53246c5c39ad'
+     isException='false'
+     isOrdered='false'
+     isStream='false'
+     isUnique='true'
+     name='SearchStr'
+     direction='in'>
+    <type href='mof:/string:uml:Type'/>
+   </ownedParameter>
    <ownedParameter xmi:uuid='urn:uuid:e4db4241-049f-4d6f-a02d-bf229d8d75a5'
      isException='false'
      isOrdered='false'
      isStream='false'
      isUnique='true'
      direction='return'>
-    <type href='mof:/void:uml:Type'/>
+    <type href='mof:/*HotelInfo:uml:Type'/>
    </ownedParameter>
   </ownedOperation>
  </uml:Class>

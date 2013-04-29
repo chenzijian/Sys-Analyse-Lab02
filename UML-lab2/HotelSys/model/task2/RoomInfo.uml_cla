@@ -15,9 +15,10 @@
     isReadOnly='false'
     isStatic='false'
     isUnique='true'
-    name='RoomName'
+    name='RoomType_Name'
     aggregation='none'
     visibility='package'>
+   <type href='mof:/string:uml:Type'/>
    <lowerValue xmi:type='uml:LiteralInteger' xmi:uuid='urn:uuid:469724e9-e6a4-43f6-937c-7422f86c7dd0'
      value='1'
      visibility='public'/>
@@ -33,9 +34,10 @@
     isReadOnly='false'
     isStatic='false'
     isUnique='true'
-    name='RoomDescription'
+    name='RoomType_Description'
     aggregation='none'
     visibility='package'>
+   <type href='mof:/string:uml:Type'/>
    <lowerValue xmi:type='uml:LiteralInteger' xmi:uuid='urn:uuid:903c5c4f-e623-4621-9884-46a1ce5fc51a'
      value='1'
      visibility='public'/>
@@ -51,9 +53,10 @@
     isReadOnly='false'
     isStatic='false'
     isUnique='true'
-    name='RoomValidDate'
+    name='Room_Date'
     aggregation='none'
     visibility='package'>
+   <type href='mof:/string:uml:Type'/>
    <lowerValue xmi:type='uml:LiteralInteger' xmi:uuid='urn:uuid:98a25305-d654-4f8a-8b94-b2ba5087a53e'
      value='1'
      visibility='public'/>
@@ -61,7 +64,7 @@
      value='1'
      visibility='public'/>
   </ownedAttribute>
-  <ownedAttribute xmi:uuid='urn:uuid:16aa1d78-567a-4ae4-958f-6e7e20c078b6'
+  <ownedAttribute xmi:uuid='urn:uuid:0b749cb2-8db7-4eb6-9e98-2254261c6fab'
     isDerived='false'
     isDerivedUnion='false'
     isLeaf='false'
@@ -69,13 +72,71 @@
     isReadOnly='false'
     isStatic='false'
     isUnique='true'
-    name='RoomPrice'
+    name='Room_Price'
     aggregation='none'
     visibility='package'>
-   <lowerValue xmi:type='uml:LiteralInteger' xmi:uuid='urn:uuid:6cc2566e-fc8f-4e11-93cf-906b7988d4b4'
+   <type href='mof:/float:uml:Type'/>
+   <lowerValue xmi:type='uml:LiteralInteger' xmi:uuid='urn:uuid:30b52e2e-7e4c-4fa7-b367-447375050d6d'
      value='1'
      visibility='public'/>
-   <upperValue xmi:type='uml:LiteralUnlimitedNatural' xmi:uuid='urn:uuid:90091c72-ac4f-40cf-ba7b-ecb8eb4d30be'
+   <upperValue xmi:type='uml:LiteralUnlimitedNatural' xmi:uuid='urn:uuid:e0ba4275-9ca3-4560-9c4a-b63a69af3fec'
+     value='1'
+     visibility='public'/>
+  </ownedAttribute>
+  <ownedAttribute xmi:uuid='urn:uuid:46fb37c2-afe2-44a8-8f29-d58cd5365e1f'
+    isDerived='false'
+    isDerivedUnion='false'
+    isLeaf='false'
+    isOrdered='false'
+    isReadOnly='false'
+    isStatic='false'
+    isUnique='true'
+    name='Room_ID'
+    aggregation='none'
+    visibility='package'>
+   <type href='mof:/int:uml:Type'/>
+   <lowerValue xmi:type='uml:LiteralInteger' xmi:uuid='urn:uuid:f9854064-ed94-437a-9b55-9af46aa6a783'
+     value='1'
+     visibility='public'/>
+   <upperValue xmi:type='uml:LiteralUnlimitedNatural' xmi:uuid='urn:uuid:3fff1b78-664e-4b1e-a936-dcf451e4dd78'
+     value='1'
+     visibility='public'/>
+  </ownedAttribute>
+  <ownedAttribute xmi:uuid='urn:uuid:8038ed39-b15f-4825-90bf-eebd61db1871'
+    isDerived='false'
+    isDerivedUnion='false'
+    isLeaf='false'
+    isOrdered='false'
+    isReadOnly='false'
+    isStatic='false'
+    isUnique='true'
+    name='Hotel_ID'
+    aggregation='none'
+    visibility='package'>
+   <type href='mof:/int:uml:Type'/>
+   <lowerValue xmi:type='uml:LiteralInteger' xmi:uuid='urn:uuid:579eb60d-70d9-4a45-a9cc-8bdaa6fc1b19'
+     value='1'
+     visibility='public'/>
+   <upperValue xmi:type='uml:LiteralUnlimitedNatural' xmi:uuid='urn:uuid:0a8f73ce-582b-4b22-846d-0d2330de2303'
+     value='1'
+     visibility='public'/>
+  </ownedAttribute>
+  <ownedAttribute xmi:uuid='urn:uuid:8d37002a-1fe2-4981-9eb8-8adde7502943'
+    isDerived='false'
+    isDerivedUnion='false'
+    isLeaf='false'
+    isOrdered='false'
+    isReadOnly='false'
+    isStatic='false'
+    isUnique='true'
+    name='Room_MaxGuest'
+    aggregation='none'
+    visibility='package'>
+   <type href='mof:/int:uml:Type'/>
+   <lowerValue xmi:type='uml:LiteralInteger' xmi:uuid='urn:uuid:2260535a-edb3-4aac-bcd6-f50dfda7fbb4'
+     value='1'
+     visibility='public'/>
+   <upperValue xmi:type='uml:LiteralUnlimitedNatural' xmi:uuid='urn:uuid:77300f7c-134d-43b0-94a4-965f0466c886'
      value='1'
      visibility='public'/>
   </ownedAttribute>
