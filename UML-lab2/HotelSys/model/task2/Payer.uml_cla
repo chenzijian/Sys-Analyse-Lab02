@@ -5,7 +5,7 @@
    isAbstract='false'
    isActive='false'
    isLeaf='false'
-   name='PayerInfo'
+   name='Payer'
    visibility='public'>
   <ownedAttribute xmi:uuid='urn:uuid:855bb477-b6ac-4106-9c28-f8537f355cf8'
     isDerived='false'

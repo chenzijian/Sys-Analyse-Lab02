@@ -1,16 +1,13 @@
 <?xml version='1.0' encoding='UTF-8' standalone='yes'?>
 <xmi:XMI xmi:version='2.1' xmlns:xmi='http://schema.omg.org/spec/XMI/2.1' xmlns:uml='http://schema.omg.org/spec/UML/2.1.1/uml.xml'>
  <documentation exporter='Oracle JDeveloper' exporterVersion='11.1.2.3.0'/>
- <uml:Class xmi:uuid='urn:uuid:a34ee2cd-2a30-4f26-b40a-b152e8eb66ad'
+ <uml:Class xmi:uuid='urn:uuid:58694adc-8b2d-4ed2-b172-1f5ec4def2b7'
    isAbstract='false'
    isActive='false'
    isLeaf='false'
    name='MSelection'
    visibility='public'>
-  <generalization xmi:uuid='urn:uuid:b98514db-70d0-4ccb-a7f8-d6db57c7a593'>
-   <general href='urn:uuid:d183b86b-b740-4cae-adec-ac4c2d4f028d'/>
-  </generalization>
-  <ownedAttribute xmi:uuid='urn:uuid:63d5e3f0-4309-4150-9635-14b228221ad2'
+  <ownedAttribute xmi:uuid='urn:uuid:7cd11d72-5577-496f-a74c-694e0c563a3b'
     isDerived='false'
     isDerivedUnion='false'
     isLeaf='false'
@@ -18,41 +15,103 @@
     isReadOnly='false'
     isStatic='false'
     isUnique='true'
-    name='SelectedStr'
+    name='UserSelection'
     aggregation='none'
     visibility='package'>
-   <type href='mof:/string:uml:Type'/>
-   <lowerValue xmi:type='uml:LiteralInteger' xmi:uuid='urn:uuid:2272f529-7598-4863-974d-d0af4f18fd28'
+   <type href='urn:uuid:a34ee2cd-2a30-4f26-b40a-b152e8eb66ad'/>
+   <lowerValue xmi:type='uml:LiteralInteger' xmi:uuid='urn:uuid:f391f1d2-fb5b-4270-9677-9b5b79ffd152'
      value='1'
      visibility='public'/>
-   <upperValue xmi:type='uml:LiteralUnlimitedNatural' xmi:uuid='urn:uuid:aa0c4adb-e3ae-4907-b7b4-7bc109a68acb'
+   <upperValue xmi:type='uml:LiteralUnlimitedNatural' xmi:uuid='urn:uuid:adc2a372-4a58-4e7a-9676-c0fa09657134'
      value='1'
      visibility='public'/>
   </ownedAttribute>
-  <ownedOperation xmi:uuid='urn:uuid:c5e5396f-7c7b-462b-ba8a-1809f8c6f880'
+  <ownedOperation xmi:uuid='urn:uuid:9e9c5dfb-80bc-4984-aaed-e4e3626ef2ab'
     isAbstract='false'
     isLeaf='false'
     isQuery='false'
     isStatic='false'
-    name='Search_SelectMode'
+    name='MSelection_Hotel'
     concurrency='sequential'
     visibility='package'>
-   <ownedParameter xmi:uuid='urn:uuid:b481880d-2e91-417e-84f9-53246c5c39ad'
+   <ownedParameter xmi:uuid='urn:uuid:b04a076e-1935-4c77-8a11-8a3d7d88f20c'
      isException='false'
      isOrdered='false'
      isStream='false'
      isUnique='true'
-     name='SearchStr'
+     name='UserSelection'
      direction='in'>
-    <type href='mof:/string:uml:Type'/>
+    <type href='urn:uuid:a34ee2cd-2a30-4f26-b40a-b152e8eb66ad'/>
    </ownedParameter>
-   <ownedParameter xmi:uuid='urn:uuid:e4db4241-049f-4d6f-a02d-bf229d8d75a5'
+   <ownedParameter xmi:uuid='urn:uuid:cd874c1d-41d7-4dd6-9612-ee067ead1fd2'
+     isException='false'
+     isOrdered='false'
+     isStream='false'
+     isUnique='true'
+     name='HotelResult'
+     direction='in'>
+    <type href='mof:/Hotel*%20:uml:Type'/>
+   </ownedParameter>
+   <ownedParameter xmi:uuid='urn:uuid:08088a5f-77db-452e-9a87-8b4e33db4c4f'
+     isException='false'
+     isOrdered='false'
+     isStream='false'
+     isUnique='true'
+     name='int &amp;HotelCount'
+     direction='in'>
+    <type href='mof:/int:uml:Type'/>
+   </ownedParameter>
+   <ownedParameter xmi:uuid='urn:uuid:cb9f575e-88eb-4edd-933c-9e79b1507ab6'
      isException='false'
      isOrdered='false'
      isStream='false'
      isUnique='true'
      direction='return'>
-    <type href='mof:/*HotelInfo:uml:Type'/>
+    <type href='mof:/void:uml:Type'/>
+   </ownedParameter>
+  </ownedOperation>
+  <ownedOperation xmi:uuid='urn:uuid:c69efceb-c439-4971-a955-4858a93418af'
+    isAbstract='false'
+    isLeaf='false'
+    isQuery='false'
+    isStatic='false'
+    name='MSelection_Room'
+    concurrency='sequential'
+    visibility='package'>
+   <ownedParameter xmi:uuid='urn:uuid:930d95f1-94b0-402a-82fc-6f2bdfe2bea3'
+     isException='false'
+     isOrdered='false'
+     isStream='false'
+     isUnique='true'
+     name='SearchHotel'
+     direction='in'>
+    <type href='urn:uuid:bc9c5d28-f877-485e-8f87-03bb1470db2f'/>
+   </ownedParameter>
+   <ownedParameter xmi:uuid='urn:uuid:0e8aa835-9d34-4319-ac7b-cb0c19c7cc74'
+     isException='false'
+     isOrdered='false'
+     isStream='false'
+     isUnique='true'
+     name='RoomResult'
+     direction='in'>
+    <type href='mof:/Room*:uml:Type'/>
+   </ownedParameter>
+   <ownedParameter xmi:uuid='urn:uuid:bf69b87c-c573-4a64-8d7b-44d4dfdbca39'
+     isException='false'
+     isOrdered='false'
+     isStream='false'
+     isUnique='true'
+     name='&amp;RoomCount'
+     direction='in'>
+    <type href='mof:/int:uml:Type'/>
+   </ownedParameter>
+   <ownedParameter xmi:uuid='urn:uuid:4af28af2-1ac1-4202-999e-4a66e7eb1170'
+     isException='false'
+     isOrdered='false'
+     isStream='false'
+     isUnique='true'
+     direction='return'>
+    <type href='mof:/void:uml:Type'/>
    </ownedParameter>
   </ownedOperation>
  </uml:Class>

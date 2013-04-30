@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='UTF-8' standalone='yes'?>
 <xmi:XMI xmi:version='2.1' xmlns:xmi='http://schema.omg.org/spec/XMI/2.1' xmlns:uml='http://schema.omg.org/spec/UML/2.1.1/uml.xml'>
  <documentation exporter='Oracle JDeveloper' exporterVersion='11.1.2.3.0'/>
- <uml:Class xmi:uuid='urn:uuid:55717f58-4219-4631-b335-306f8ea6ed7d'
+ <uml:Class xmi:uuid='urn:uuid:08278b56-1a92-43fe-99cf-d6d4c860fa50'
    isAbstract='false'
    isActive='false'
    isLeaf='false'
    name='MPayment'
    visibility='public'>
-  <ownedAttribute xmi:uuid='urn:uuid:cb3aa3c8-d071-4cb4-8ed7-e1128c78efe5'
+  <ownedAttribute xmi:uuid='urn:uuid:e6467b32-fcd4-42db-a20e-7d6416a5449c'
     isDerived='false'
     isDerivedUnion='false'
     isLeaf='false'
@@ -15,17 +15,18 @@
     isReadOnly='false'
     isStatic='false'
     isUnique='true'
-    name='PaymentInfo'
+    name='Payment_Room[]'
     aggregation='none'
     visibility='package'>
-   <lowerValue xmi:type='uml:LiteralInteger' xmi:uuid='urn:uuid:7d6f0aae-d467-40cf-b54b-25610c678931'
+   <type href='urn:uuid:891ffcbd-28a9-42bb-97a8-8f76571bc9e9'/>
+   <lowerValue xmi:type='uml:LiteralInteger' xmi:uuid='urn:uuid:63e862a4-217d-49f5-89cf-668e6f2934ce'
      value='1'
      visibility='public'/>
-   <upperValue xmi:type='uml:LiteralUnlimitedNatural' xmi:uuid='urn:uuid:a289700b-cb71-4a5b-b21e-edaabb5229ce'
+   <upperValue xmi:type='uml:LiteralUnlimitedNatural' xmi:uuid='urn:uuid:86a175d0-4d44-44bc-b132-ff1fcc5df7ef'
      value='1'
      visibility='public'/>
   </ownedAttribute>
-  <ownedAttribute xmi:uuid='urn:uuid:83e87da0-a12b-4c4c-bc7d-b5fdf95fdd63'
+  <ownedAttribute xmi:uuid='urn:uuid:6ea673af-607c-45be-a74c-a331392704d7'
     isDerived='false'
     isDerivedUnion='false'
     isLeaf='false'
@@ -33,15 +34,274 @@
     isReadOnly='false'
     isStatic='false'
     isUnique='true'
-    name='PayerInfo'
+    name='Payment_Payer'
     aggregation='none'
     visibility='package'>
-   <lowerValue xmi:type='uml:LiteralInteger' xmi:uuid='urn:uuid:dab47711-d73b-4d88-89ac-e0e1942bfa95'
+   <type href='urn:uuid:f418ecdc-4181-4d2d-a1bc-de49b29e245b'/>
+   <lowerValue xmi:type='uml:LiteralInteger' xmi:uuid='urn:uuid:37d8394c-0051-4f75-a1b0-33db4dfbbe29'
      value='1'
      visibility='public'/>
-   <upperValue xmi:type='uml:LiteralUnlimitedNatural' xmi:uuid='urn:uuid:4741b1eb-57b2-45be-ad61-78c137e57be5'
+   <upperValue xmi:type='uml:LiteralUnlimitedNatural' xmi:uuid='urn:uuid:6c867c9e-48d3-4979-96e8-bb2c5f172b8b'
      value='1'
      visibility='public'/>
   </ownedAttribute>
+  <ownedAttribute xmi:uuid='urn:uuid:d2a7280b-1cfd-41eb-8050-569f9ba64b8e'
+    isDerived='false'
+    isDerivedUnion='false'
+    isLeaf='false'
+    isOrdered='false'
+    isReadOnly='false'
+    isStatic='false'
+    isUnique='true'
+    name='Payment_UserName[]'
+    aggregation='none'
+    visibility='package'>
+   <type href='mof:/string:uml:Type'/>
+   <lowerValue xmi:type='uml:LiteralInteger' xmi:uuid='urn:uuid:b9ed2ff0-e4ce-4a76-9a6f-f114da96042e'
+     value='1'
+     visibility='public'/>
+   <upperValue xmi:type='uml:LiteralUnlimitedNatural' xmi:uuid='urn:uuid:f738a709-b892-49d4-bdbc-38af7be73319'
+     value='1'
+     visibility='public'/>
+  </ownedAttribute>
+  <ownedAttribute xmi:uuid='urn:uuid:2300e11d-102a-4fc6-a57b-d1993a079bf1'
+    isDerived='false'
+    isDerivedUnion='false'
+    isLeaf='false'
+    isOrdered='false'
+    isReadOnly='false'
+    isStatic='false'
+    isUnique='true'
+    name='Payment_UserSpecialRequest[]'
+    aggregation='none'
+    visibility='package'>
+   <type href='mof:/string:uml:Type'/>
+   <lowerValue xmi:type='uml:LiteralInteger' xmi:uuid='urn:uuid:aca964a7-3efe-4ac0-aca9-d8562ff873b4'
+     value='1'
+     visibility='public'/>
+   <upperValue xmi:type='uml:LiteralUnlimitedNatural' xmi:uuid='urn:uuid:1b60c4ca-e326-4887-b662-1275c7855677'
+     value='1'
+     visibility='public'/>
+  </ownedAttribute>
+  <ownedAttribute xmi:uuid='urn:uuid:dc83c7f7-abfc-4e64-b014-cb4a66d8ddd2'
+    isDerived='false'
+    isDerivedUnion='false'
+    isLeaf='false'
+    isOrdered='false'
+    isReadOnly='false'
+    isStatic='false'
+    isUnique='true'
+    name='Payment_RoomCount'
+    aggregation='none'
+    visibility='package'>
+   <type href='mof:/int:uml:Type'/>
+   <lowerValue xmi:type='uml:LiteralInteger' xmi:uuid='urn:uuid:88ddab4c-40f2-4cd0-ad2d-c67a1a6a94db'
+     value='1'
+     visibility='public'/>
+   <upperValue xmi:type='uml:LiteralUnlimitedNatural' xmi:uuid='urn:uuid:3ed7f9aa-9183-4b10-9ec9-d12aed907c7b'
+     value='1'
+     visibility='public'/>
+  </ownedAttribute>
+  <ownedOperation xmi:uuid='urn:uuid:e719403e-ace4-44de-b4c0-0e9afc3761d0'
+    isAbstract='false'
+    isLeaf='false'
+    isQuery='false'
+    isStatic='false'
+    name='MPayment_AddRoom'
+    concurrency='sequential'
+    visibility='package'>
+   <ownedParameter xmi:uuid='urn:uuid:55c6d1ac-1059-484e-ab1f-cdd38ba17a21'
+     isException='false'
+     isOrdered='false'
+     isStream='false'
+     isUnique='true'
+     name='Room_Booked'
+     direction='in'>
+    <type href='urn:uuid:891ffcbd-28a9-42bb-97a8-8f76571bc9e9'/>
+   </ownedParameter>
+   <ownedParameter xmi:uuid='urn:uuid:26fb90ba-e456-49ac-a104-73e98cb2cdea'
+     isException='false'
+     isOrdered='false'
+     isStream='false'
+     isUnique='true'
+     name='Username'
+     direction='in'>
+    <type href='mof:/string%20:uml:Type'/>
+   </ownedParameter>
+   <ownedParameter xmi:uuid='urn:uuid:a5476be4-2d6f-4915-8308-3c4e1b783246'
+     isException='false'
+     isOrdered='false'
+     isStream='false'
+     isUnique='true'
+     name='UserRequest'
+     direction='in'>
+    <type href='mof:/string:uml:Type'/>
+   </ownedParameter>
+   <ownedParameter xmi:uuid='urn:uuid:0ae58819-2a29-4e62-b345-969408e8fa68'
+     isException='false'
+     isOrdered='false'
+     isStream='false'
+     isUnique='true'
+     direction='return'>
+    <type href='mof:/void:uml:Type'/>
+   </ownedParameter>
+  </ownedOperation>
+  <ownedOperation xmi:uuid='urn:uuid:71a23cc9-8e20-4c24-9f13-f071ae764673'
+    isAbstract='false'
+    isLeaf='false'
+    isQuery='false'
+    isStatic='false'
+    name='MPayment_SetPayer'
+    concurrency='sequential'
+    visibility='package'>
+   <ownedParameter xmi:uuid='urn:uuid:62c240bb-0aaf-4680-ac8d-4c4ddf34690f'
+     isException='false'
+     isOrdered='false'
+     isStream='false'
+     isUnique='true'
+     name='Payer_Name'
+     direction='in'>
+    <type href='mof:/string:uml:Type'/>
+   </ownedParameter>
+   <ownedParameter xmi:uuid='urn:uuid:cdebfb08-dc26-4e59-af43-8bd358896657'
+     isException='false'
+     isOrdered='false'
+     isStream='false'
+     isUnique='true'
+     name='Payer_Email'
+     direction='in'>
+    <type href='mof:/string:uml:Type'/>
+   </ownedParameter>
+   <ownedParameter xmi:uuid='urn:uuid:79c40bce-355e-4e13-aebc-8dcc64ddc07d'
+     isException='false'
+     isOrdered='false'
+     isStream='false'
+     isUnique='true'
+     name='Payer_CardID'
+     direction='in'>
+    <type href='mof:/string:uml:Type'/>
+   </ownedParameter>
+   <ownedParameter xmi:uuid='urn:uuid:0d9ea7cd-0664-408c-9424-d115eb791bf3'
+     isException='false'
+     isOrdered='false'
+     isStream='false'
+     isUnique='true'
+     name='Payer_CardType'
+     direction='in'>
+    <type href='mof:/string:uml:Type'/>
+   </ownedParameter>
+   <ownedParameter xmi:uuid='urn:uuid:84d525ac-4d08-4f01-bfdf-56c89c7f73e2'
+     isException='false'
+     isOrdered='false'
+     isStream='false'
+     isUnique='true'
+     direction='return'>
+    <type href='mof:/void:uml:Type'/>
+   </ownedParameter>
+  </ownedOperation>
+  <ownedOperation xmi:uuid='urn:uuid:e4d43d61-e0b2-46e8-81f2-2ac5a72464a9'
+    isAbstract='false'
+    isLeaf='false'
+    isQuery='false'
+    isStatic='false'
+    name='MPayment_GetRoomInfo'
+    concurrency='sequential'
+    visibility='package'>
+   <ownedParameter xmi:uuid='urn:uuid:b2bb22af-7984-42e1-9cdc-8a96058e7259'
+     isException='false'
+     isOrdered='false'
+     isStream='false'
+     isUnique='true'
+     name='hotel'
+     direction='in'>
+    <type href='mof:/Hotel*%20:uml:Type'/>
+   </ownedParameter>
+   <ownedParameter xmi:uuid='urn:uuid:bfaefb98-d6c5-454f-a74c-e9e09af0d05a'
+     isException='false'
+     isOrdered='false'
+     isStream='false'
+     isUnique='true'
+     name='room'
+     direction='in'>
+    <type href='mof:/Room*%20:uml:Type'/>
+   </ownedParameter>
+   <ownedParameter xmi:uuid='urn:uuid:e2e6efa6-c10f-4619-b113-d62bf438f024'
+     isException='false'
+     isOrdered='false'
+     isStream='false'
+     isUnique='true'
+     name='&amp;roomCount'
+     direction='in'>
+    <type href='mof:/int:uml:Type'/>
+   </ownedParameter>
+   <ownedParameter xmi:uuid='urn:uuid:bc0d94fc-9bdb-4b6f-a612-aabf4bb73472'
+     isException='false'
+     isOrdered='false'
+     isStream='false'
+     isUnique='true'
+     direction='return'>
+    <type href='mof:/void:uml:Type'/>
+   </ownedParameter>
+  </ownedOperation>
+  <ownedOperation xmi:uuid='urn:uuid:7baa26af-6719-44bf-8c01-f823d3f1d6c9'
+    isAbstract='false'
+    isLeaf='false'
+    isQuery='false'
+    isStatic='false'
+    name='MPayment_GetPayer'
+    concurrency='sequential'
+    visibility='package'>
+   <ownedParameter xmi:uuid='urn:uuid:56305182-7d45-4581-8f55-f91483c6fa6b'
+     isException='false'
+     isOrdered='false'
+     isStream='false'
+     isUnique='true'
+     name='payer'
+     direction='in'>
+    <type href='mof:/Payer*:uml:Type'/>
+   </ownedParameter>
+   <ownedParameter xmi:uuid='urn:uuid:0d06410d-dfd7-466b-aec0-b256c280899f'
+     isException='false'
+     isOrdered='false'
+     isStream='false'
+     isUnique='true'
+     direction='return'>
+    <type href='mof:/void:uml:Type'/>
+   </ownedParameter>
+  </ownedOperation>
+  <ownedOperation xmi:uuid='urn:uuid:8e3f82b8-920e-4b75-b675-49062c22cdad'
+    isAbstract='false'
+    isLeaf='false'
+    isQuery='false'
+    isStatic='false'
+    name='MPayment_Confirm'
+    concurrency='sequential'
+    visibility='package'>
+   <ownedParameter xmi:uuid='urn:uuid:3aeba538-6aa2-4d9d-8e6d-5eefb4ace9e0'
+     isException='false'
+     isOrdered='false'
+     isStream='false'
+     isUnique='true'
+     direction='return'>
+    <type href='mof:/bool:uml:Type'/>
+   </ownedParameter>
+  </ownedOperation>
+  <ownedOperation xmi:uuid='urn:uuid:d7432e3a-9e16-433d-8a0b-ed9bec6adcb6'
+    isAbstract='false'
+    isLeaf='false'
+    isQuery='false'
+    isStatic='false'
+    name='MPayment_ClearAll'
+    concurrency='sequential'
+    visibility='package'>
+   <ownedParameter xmi:uuid='urn:uuid:0e195c30-c88b-44db-a945-941b699de7f4'
+     isException='false'
+     isOrdered='false'
+     isStream='false'
+     isUnique='true'
+     direction='return'>
+    <type href='mof:/void:uml:Type'/>
+   </ownedParameter>
+  </ownedOperation>
  </uml:Class>
 </xmi:XMI>

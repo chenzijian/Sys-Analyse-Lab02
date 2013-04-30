@@ -5,7 +5,7 @@
    isAbstract='false'
    isActive='false'
    isLeaf='false'
-   name='RoomInfo'
+   name='Room'
    visibility='public'>
   <ownedAttribute xmi:uuid='urn:uuid:de09a207-999c-43af-ad6e-a1562c15bf9c'
     isDerived='false'
@@ -129,7 +129,7 @@
     isReadOnly='false'
     isStatic='false'
     isUnique='true'
-    name='Room_MaxGuest'
+    name='Room_MaxGuestNum'
     aggregation='none'
     visibility='package'>
    <type href='mof:/int:uml:Type'/>

@@ -1,16 +1,16 @@
 <?xml version='1.0' encoding='UTF-8' standalone='yes'?>
 <xmi:XMI xmi:version='2.1' xmlns:xmi='http://schema.omg.org/spec/XMI/2.1' xmlns:uml='http://schema.omg.org/spec/UML/2.1.1/uml.xml'>
  <documentation exporter='Oracle JDeveloper' exporterVersion='11.1.2.3.0'/>
- <uml:Association xmi:uuid='urn:uuid:5090f73b-8548-433b-a1fd-5af78670a28b'
+ <uml:Association xmi:uuid='urn:uuid:ba109bf4-3338-4c85-bf3f-8ccbbeb66b74'
    isAbstract='false'
    isDerived='false'
    isLeaf='false'
    name='Association7'
    visibility='public'>
-  <memberEnd href='urn:uuid:e671b26b-a85d-4576-9b63-f699ce0a3171'/>
-  <memberEnd href='urn:uuid:cdf46e13-4649-4a23-9ca4-61643ca208a4'/>
-  <navigableOwnedEnd href='urn:uuid:cdf46e13-4649-4a23-9ca4-61643ca208a4'/>
-  <ownedEnd xmi:uuid='urn:uuid:e671b26b-a85d-4576-9b63-f699ce0a3171'
+  <memberEnd href='urn:uuid:bb0c6efa-ae56-46c8-9160-837729c06c2c'/>
+  <memberEnd href='urn:uuid:ae915da0-8745-4c7d-8a18-90b1a3a121b9'/>
+  <navigableOwnedEnd href='urn:uuid:ae915da0-8745-4c7d-8a18-90b1a3a121b9'/>
+  <ownedEnd xmi:uuid='urn:uuid:bb0c6efa-ae56-46c8-9160-837729c06c2c'
     isDerived='false'
     isDerivedUnion='false'
     isLeaf='false'
@@ -20,16 +20,16 @@
     isUnique='true'
     name=''
     aggregation='none'>
-   <association href='urn:uuid:5090f73b-8548-433b-a1fd-5af78670a28b'/>
+   <association href='urn:uuid:ba109bf4-3338-4c85-bf3f-8ccbbeb66b74'/>
    <type href='urn:uuid:08278b56-1a92-43fe-99cf-d6d4c860fa50'/>
-   <lowerValue xmi:type='uml:LiteralInteger' xmi:uuid='urn:uuid:24c462b5-0d21-4e76-bab7-5b97ec75877a'
+   <lowerValue xmi:type='uml:LiteralInteger' xmi:uuid='urn:uuid:7db7921c-d0f3-4fd1-828e-362c836c55b5'
      value='1'
      visibility='public'/>
-   <upperValue xmi:type='uml:LiteralUnlimitedNatural' xmi:uuid='urn:uuid:7d81b048-bba5-4ee2-9bdc-6aa9b552bacd'
+   <upperValue xmi:type='uml:LiteralUnlimitedNatural' xmi:uuid='urn:uuid:793d2f94-a8da-4fd9-be52-92573e37c1c3'
      value='1'
      visibility='public'/>
   </ownedEnd>
-  <ownedEnd xmi:uuid='urn:uuid:cdf46e13-4649-4a23-9ca4-61643ca208a4'
+  <ownedEnd xmi:uuid='urn:uuid:ae915da0-8745-4c7d-8a18-90b1a3a121b9'
     isDerived='false'
     isDerivedUnion='false'
     isLeaf='false'
@@ -39,13 +39,13 @@
     isUnique='true'
     name=''
     aggregation='none'>
-   <association href='urn:uuid:5090f73b-8548-433b-a1fd-5af78670a28b'/>
+   <association href='urn:uuid:ba109bf4-3338-4c85-bf3f-8ccbbeb66b74'/>
    <type href='urn:uuid:29a9b9fb-f3e9-4aa5-8bf7-f703194335fc'/>
-   <lowerValue xmi:type='uml:LiteralInteger' xmi:uuid='urn:uuid:20cd98c2-b822-4af8-a667-21694252ada6'
-     value='0'
+   <lowerValue xmi:type='uml:LiteralInteger' xmi:uuid='urn:uuid:d0bce51d-5b9f-433f-8f15-6ab46e66c56d'
+     value='1'
      visibility='public'/>
-   <upperValue xmi:type='uml:LiteralUnlimitedNatural' xmi:uuid='urn:uuid:b18973a5-96b7-4e87-9b51-d7aee632a337'
-     value='*'
+   <upperValue xmi:type='uml:LiteralUnlimitedNatural' xmi:uuid='urn:uuid:291dee4f-c217-4f43-9d22-01d6725bd51f'
+     value='1'
      visibility='public'/>
   </ownedEnd>
  </uml:Association>

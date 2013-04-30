@@ -5,7 +5,7 @@
    isAbstract='false'
    isActive='false'
    isLeaf='false'
-   name='HotelInfo'
+   name='Hotel'
    visibility='public'>
   <ownedAttribute xmi:uuid='urn:uuid:5ccee60d-ff71-4a18-b1d4-63bf19042b2d'
     isDerived='false'
@@ -72,7 +72,7 @@
     isReadOnly='false'
     isStatic='false'
     isUnique='true'
-    name='Hotel_Place'
+    name='Hotel_Country'
     aggregation='none'
     visibility='package'>
    <type href='mof:/string:uml:Type'/>
@@ -99,6 +99,44 @@
      value='1'
      visibility='public'/>
    <upperValue xmi:type='uml:LiteralUnlimitedNatural' xmi:uuid='urn:uuid:3a014cb0-0caf-4cee-8aa4-f501b8fde723'
+     value='1'
+     visibility='public'/>
+  </ownedAttribute>
+  <ownedAttribute xmi:uuid='urn:uuid:661ad7f1-caf0-43a6-9345-25cac2627d55'
+    isDerived='false'
+    isDerivedUnion='false'
+    isLeaf='false'
+    isOrdered='false'
+    isReadOnly='false'
+    isStatic='false'
+    isUnique='true'
+    name='Hotel_Region'
+    aggregation='none'
+    visibility='package'>
+   <type href='mof:/string:uml:Type'/>
+   <lowerValue xmi:type='uml:LiteralInteger' xmi:uuid='urn:uuid:95d735c1-1812-4064-8471-276b4184b989'
+     value='1'
+     visibility='public'/>
+   <upperValue xmi:type='uml:LiteralUnlimitedNatural' xmi:uuid='urn:uuid:b68d2cab-ab5f-48e4-88df-55fddb154973'
+     value='1'
+     visibility='public'/>
+  </ownedAttribute>
+  <ownedAttribute xmi:uuid='urn:uuid:c86dbfa8-27bd-4b25-8ee0-fb8ef1e95f91'
+    isDerived='false'
+    isDerivedUnion='false'
+    isLeaf='false'
+    isOrdered='false'
+    isReadOnly='false'
+    isStatic='false'
+    isUnique='true'
+    name='Hotel_MaxGuestNum'
+    aggregation='none'
+    visibility='package'>
+   <type href='mof:/int:uml:Type'/>
+   <lowerValue xmi:type='uml:LiteralInteger' xmi:uuid='urn:uuid:b9713775-a398-4424-8cc3-c4c1336f5f0f'
+     value='1'
+     visibility='public'/>
+   <upperValue xmi:type='uml:LiteralUnlimitedNatural' xmi:uuid='urn:uuid:874d1ba3-8fca-4583-bc7b-aac7492985bd'
      value='1'
      visibility='public'/>
   </ownedAttribute>
