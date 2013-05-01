@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<xmi:XMI xmi:version='2.1' xmlns:xmi='http://schema.omg.org/spec/XMI/2.1' xmlns:uml='http://schema.omg.org/spec/UML/2.1.1/uml.xml'>
+ <documentation exporter='Oracle JDeveloper' exporterVersion='11.1.2.3.0'/>
+ <uml:Class xmi:uuid='urn:uuid:a7a1c46d-98fe-448c-ab7c-4630aa48ed3b'
+   isAbstract='false'
+   isActive='false'
+   isLeaf='false'
+   name='Basket'
+   visibility='public'>
+  <ownedAttribute xmi:uuid='urn:uuid:7cfc50f6-2b4f-400e-9609-ff68fe137a26'
+    isDerived='false'
+    isDerivedUnion='false'
+    isLeaf='false'
+    isOrdered='false'
+    isReadOnly='false'
+    isStatic='false'
+    isUnique='true'
+    name='bookedroom'
+    aggregation='none'
+    visibility='package'>
+   <type href='urn:uuid:8a8cc853-94bc-4d8f-b311-ca5f04221143'/>
+   <lowerValue xmi:type='uml:LiteralInteger' xmi:uuid='urn:uuid:afbaef38-3de1-4ed1-bc5c-b7894a469c16'
+     value='1'
+     visibility='public'/>
+   <upperValue xmi:type='uml:LiteralUnlimitedNatural' xmi:uuid='urn:uuid:016fd3f8-fa03-46b2-b6e4-52e0a05d4fc0'
+     value='1'
+     visibility='public'/>
+  </ownedAttribute>
+  <ownedAttribute xmi:uuid='urn:uuid:837c7456-b16e-4df1-b5b8-e5197bbcccd0'
+    isDerived='false'
+    isDerivedUnion='false'
+    isLeaf='false'
+    isOrdered='false'
+    isReadOnly='false'
+    isStatic='false'
+    isUnique='true'
+    name='Userinfo'
+    aggregation='none'
+    visibility='package'>
+   <type href='mof:/string:uml:Type'/>
+   <lowerValue xmi:type='uml:LiteralInteger' xmi:uuid='urn:uuid:55ee0628-9453-4644-9bd0-b34546e68030'
+     value='1'
+     visibility='public'/>
+   <upperValue xmi:type='uml:LiteralUnlimitedNatural' xmi:uuid='urn:uuid:f5a042a1-7be2-4b5e-a7c9-dd3a38357f5f'
+     value='1'
+     visibility='public'/>
+  </ownedAttribute>
+  <ownedAttribute xmi:uuid='urn:uuid:ed9c9b26-c8b0-4258-a01f-134a855a2f8d'
+    isDerived='false'
+    isDerivedUnion='false'
+    isLeaf='false'
+    isOrdered='false'
+    isReadOnly='false'
+    isStatic='false'
+    isUnique='true'
+    name='payerinfo'
+    aggregation='none'
+    visibility='package'>
+   <type href='mof:/string:uml:Type'/>
+   <lowerValue xmi:type='uml:LiteralInteger' xmi:uuid='urn:uuid:2d2d6a30-73f7-4192-87fa-7a77fd008486'
+     value='1'
+     visibility='public'/>
+   <upperValue xmi:type='uml:LiteralUnlimitedNatural' xmi:uuid='urn:uuid:c1d22875-fa1b-4d00-9c4f-ea3c72f8e169'
+     value='1'
+     visibility='public'/>
+  </ownedAttribute>
+ </uml:Class>
+</xmi:XMI>

@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<xmi:XMI xmi:version='2.1' xmlns:xmi='http://schema.omg.org/spec/XMI/2.1' xmlns:uml='http://schema.omg.org/spec/UML/2.1.1/uml.xml'>
+ <documentation exporter='Oracle JDeveloper' exporterVersion='11.1.2.3.0'/>
+ <uml:Class xmi:uuid='urn:uuid:d1710bfc-2d74-4061-8bd4-beb3773df391'
+   isAbstract='false'
+   isActive='false'
+   isLeaf='false'
+   name='Bill'
+   visibility='public'>
+  <ownedAttribute xmi:uuid='urn:uuid:b4e4c99b-bcf5-457c-bc04-db0454f62be4'
+    isDerived='false'
+    isDerivedUnion='false'
+    isLeaf='false'
+    isOrdered='false'
+    isReadOnly='false'
+    isStatic='false'
+    isUnique='true'
+    name='Bill_Payer'
+    aggregation='none'
+    visibility='package'>
+   <type href='urn:uuid:f418ecdc-4181-4d2d-a1bc-de49b29e245b'/>
+   <lowerValue xmi:type='uml:LiteralInteger' xmi:uuid='urn:uuid:b4cba6ab-0c41-4d6b-b180-ff32b50368bc'
+     value='1'
+     visibility='public'/>
+   <upperValue xmi:type='uml:LiteralUnlimitedNatural' xmi:uuid='urn:uuid:6a9bf4ca-04bb-40d4-8982-d2c209e8f84b'
+     value='1'
+     visibility='public'/>
+  </ownedAttribute>
+  <ownedAttribute xmi:uuid='urn:uuid:73e8d47f-7a87-401d-b867-b1621ec282c7'
+    isDerived='false'
+    isDerivedUnion='false'
+    isLeaf='false'
+    isOrdered='false'
+    isReadOnly='false'
+    isStatic='false'
+    isUnique='true'
+    name='Bill_Rooms[]'
+    aggregation='none'
+    visibility='package'>
+   <type href='urn:uuid:891ffcbd-28a9-42bb-97a8-8f76571bc9e9'/>
+   <lowerValue xmi:type='uml:LiteralInteger' xmi:uuid='urn:uuid:dc190d77-ed34-4641-809e-75b07f1c4dbd'
+     value='1'
+     visibility='public'/>
+   <upperValue xmi:type='uml:LiteralUnlimitedNatural' xmi:uuid='urn:uuid:5a2dee07-a444-4123-a75b-8712b9857ce2'
+     value='1'
+     visibility='public'/>
+  </ownedAttribute>
+  <ownedAttribute xmi:uuid='urn:uuid:7318a96c-1740-47b4-9d75-334152b7837c'
+    isDerived='false'
+    isDerivedUnion='false'
+    isLeaf='false'
+    isOrdered='false'
+    isReadOnly='false'
+    isStatic='false'
+    isUnique='true'
+    name='Bill_HotelName'
+    aggregation='none'
+    visibility='package'>
+   <type href='mof:/string:uml:Type'/>
+   <lowerValue xmi:type='uml:LiteralInteger' xmi:uuid='urn:uuid:c2192b52-ee7d-4ee1-98dc-c5e71553d56c'
+     value='1'
+     visibility='public'/>
+   <upperValue xmi:type='uml:LiteralUnlimitedNatural' xmi:uuid='urn:uuid:9cebe65e-6b69-45ca-b190-02a583cf5ec6'
+     value='1'
+     visibility='public'/>
+  </ownedAttribute>
+  <ownedAttribute xmi:uuid='urn:uuid:b9b78845-8db1-4093-84f7-dd23f4026fb7'
+    isDerived='false'
+    isDerivedUnion='false'
+    isLeaf='false'
+    isOrdered='false'
+    isReadOnly='false'
+    isStatic='false'
+    isUnique='true'
+    name='Bill_RoomUser[]'
+    aggregation='none'
+    visibility='package'>
+   <type href='urn:uuid:2a32c8f4-819f-4844-8ae3-ffd6ddc74925'/>
+   <lowerValue xmi:type='uml:LiteralInteger' xmi:uuid='urn:uuid:ad863275-4ebb-4c01-8edb-b916729938e6'
+     value='1'
+     visibility='public'/>
+   <upperValue xmi:type='uml:LiteralUnlimitedNatural' xmi:uuid='urn:uuid:fc650b14-faa1-4529-96b5-e342d2d5cf1f'
+     value='1'
+     visibility='public'/>
+  </ownedAttribute>
+  <ownedAttribute xmi:uuid='urn:uuid:d7683cac-4a84-43f3-ba4f-19b906e24de6'
+    isDerived='false'
+    isDerivedUnion='false'
+    isLeaf='false'
+    isOrdered='false'
+    isReadOnly='false'
+    isStatic='false'
+    isUnique='true'
+    name='Bill_TotalPrice'
+    aggregation='none'
+    visibility='package'>
+   <type href='mof:/float:uml:Type'/>
+   <lowerValue xmi:type='uml:LiteralInteger' xmi:uuid='urn:uuid:58811cca-92df-4053-bd16-2a25f94ef1f8'
+     value='1'
+     visibility='public'/>
+   <upperValue xmi:type='uml:LiteralUnlimitedNatural' xmi:uuid='urn:uuid:7bae4024-004a-4bf0-b763-0dfd25a8062f'
+     value='1'
+     visibility='public'/>
+  </ownedAttribute>
+ </uml:Class>
+</xmi:XMI>

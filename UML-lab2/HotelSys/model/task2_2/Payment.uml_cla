@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<xmi:XMI xmi:version='2.1' xmlns:xmi='http://schema.omg.org/spec/XMI/2.1' xmlns:uml='http://schema.omg.org/spec/UML/2.1.1/uml.xml'>
+ <documentation exporter='Oracle JDeveloper' exporterVersion='11.1.2.3.0'/>
+ <uml:Class xmi:uuid='urn:uuid:6b2b7d7b-27c0-44fe-9ca6-7db43c1393cb'
+   isAbstract='false'
+   isActive='false'
+   isLeaf='false'
+   name='Payment'
+   visibility='public'>
+  <ownedAttribute xmi:uuid='urn:uuid:a0d5629a-bd32-4096-a0d7-104aa107b243'
+    isDerived='false'
+    isDerivedUnion='false'
+    isLeaf='false'
+    isOrdered='false'
+    isReadOnly='false'
+    isStatic='false'
+    isUnique='true'
+    name='paymentInfo'
+    aggregation='none'
+    visibility='package'>
+   <type href='mof:/basket:uml:Type'/>
+   <lowerValue xmi:type='uml:LiteralInteger' xmi:uuid='urn:uuid:997b37ff-d254-43d1-b1a2-0d8cd971cff1'
+     value='1'
+     visibility='public'/>
+   <upperValue xmi:type='uml:LiteralUnlimitedNatural' xmi:uuid='urn:uuid:040c2ccc-ce65-46e4-834e-81d63549e52e'
+     value='1'
+     visibility='public'/>
+  </ownedAttribute>
+ </uml:Class>
+</xmi:XMI>

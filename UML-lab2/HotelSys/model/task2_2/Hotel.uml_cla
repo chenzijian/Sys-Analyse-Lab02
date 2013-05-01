@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<xmi:XMI xmi:version='2.1' xmlns:xmi='http://schema.omg.org/spec/XMI/2.1' xmlns:uml='http://schema.omg.org/spec/UML/2.1.1/uml.xml'>
+ <documentation exporter='Oracle JDeveloper' exporterVersion='11.1.2.3.0'/>
+ <uml:Class xmi:uuid='urn:uuid:f2db687d-d5da-48e8-b5b0-450a719f2874'
+   isAbstract='false'
+   isActive='false'
+   isLeaf='false'
+   name='Hotel'
+   visibility='public'>
+  <ownedAttribute xmi:uuid='urn:uuid:e4fd30c3-feaf-432c-b5bb-2587a1b18321'
+    isDerived='false'
+    isDerivedUnion='false'
+    isLeaf='false'
+    isOrdered='false'
+    isReadOnly='false'
+    isStatic='false'
+    isUnique='true'
+    name='Hotel_Name'
+    aggregation='none'
+    visibility='package'>
+   <type href='mof:/string:uml:Type'/>
+   <lowerValue xmi:type='uml:LiteralInteger' xmi:uuid='urn:uuid:10aba486-de20-46a4-a8fd-510b3aebaadf'
+     value='1'
+     visibility='public'/>
+   <upperValue xmi:type='uml:LiteralUnlimitedNatural' xmi:uuid='urn:uuid:dfd6298b-086a-4a9e-a65f-28d57be44d10'
+     value='1'
+     visibility='public'/>
+  </ownedAttribute>
+ </uml:Class>
+</xmi:XMI>
