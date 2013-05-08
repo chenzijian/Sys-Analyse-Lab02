@@ -1,0 +1,100 @@
+d
+    title Select
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(href='/stylesheets/bootstrap.min.css', rel='stylesheet', media='screen')
+  body
+    center
+      h1  Hotel Reserve System 
+    .container
+      ul.breadcrumb
+        li
+          a(href='#') home
+          span.divider /
+        li
+          a(href='#') search
+          span.divider /
+        li.active select
+      .row-fluid
+        .span12
+          .row-fluid
+            .span2
+              h5 Sort Option:
+              label.radio
+                input#optionsRadios1(type='radio', name='optionsRadios', value='option1', checked='checked')
+                | Rating
+              label.radio
+                input#optionsRadios2(type='radio', name='optionsRadios', value='option2')
+                | Price
+              br
+              button.btn.btn-primary(type='button') High to Low
+              br
+              br
+              button.btn(type='button') Low to High
+            .span10
+              h3  XXX hotels found 
+              table.table.table-bordered.table-hover
+                thead
+                  tr
+                    th Hotel Name
+                    th
+                      | Wed
+                      br
+                      | 1 May
+                    th
+                      | Thu
+                      br
+                      | 2 May
+                    th
+                      | Fri
+                      br
+                      | 3 May
+                    th
+                      | Sat
+                      br
+                      | 4 May
+                    th
+                      | Sun
+                      br
+                      | 5 May
+                    th
+                      | Mon
+                      br
+                      | 5 May
+                    th
+                      | Tus
+                      br
+                      | 7 May
+                tbody
+                  tr
+                    td
+                      a(href='#') Hotel1
+                    td $1
+                    td $2
+                    td $3
+                    td $4
+                    td $5
+                    td $6
+                    td $7
+                  tr
+                    td
+                      a(href='#') Hotel2
+                    td $1
+                    td $2
+                    td $3
+                    td $4
+                    td $5
+                    td $6
+                    td $7
+                  tr
+                    td
+                      a(href='#') Hotel3
+                    td $1
+                    td $2
+                    td $3
+                    td $4
+                    td $5
+                    td $6
+                    td $7
+    script(src='http://code.jquery.com/jquery.js')
+    script(src='js/bootstrap.min.js')
+

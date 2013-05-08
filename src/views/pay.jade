@@ -1,0 +1,308 @@
+!!! 5
+html
+  head
+    title Pay
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    //
+       Bootstrap 
+    link(href='/stylesheets/bootstrap.min.css', rel='stylesheet', media='screen')
+  body
+    center
+      h1  Hotel Reserve System 
+    .container
+      div
+        ul.breadcrumb
+          li
+            a(href='#') home
+            span.divider /
+          li
+            a(href='#') search
+            span.divider /
+          li
+            a(href='#') select
+            span.divider /
+          li
+            a(href='#') book
+            span.divider /
+          li.active pay
+      .well
+        h3 Traveller & Payment Details
+        p
+          | Names must be entered exactly as they appear on travel documents. Names cannot be changed after reservation is made.
+          br
+          | Please do not use apostrophes ('), hyphens (-), numbers or spaces in the name fields below. * = mandatory field
+      form#bookpay-frm(action='#', method='post')
+        div
+          h4
+            font(color='blue') Hotel Rooms
+          hr
+          .row-fluid
+            .span12
+              .row-fluid
+                .span3
+                  label Traveller Name*
+                .span3
+                  label Title*
+                  select#title(name='title')
+                    option(value='') Select
+                    option(value='Mr') Mr
+                    option(value='Ms') Ms
+                    option(value='Mrs') Mrs
+                    option(value='Miss') Miss
+                .span3
+                  label Firstname*
+                  input#firstname.w2(name='firstname', value='', type='text')
+                .span3
+                  label Surname*
+                  input#surname.w2(name='surname', value='', type='text')
+          .row-fluid
+            .span12
+              .row-fluid
+                .span2
+                  label Email Address*
+                .span4
+                  input#email.w2(name='email', onchange='watchField(this);', value='', type='text')
+                .span2
+                  label Contact Phone*
+                .span4
+                  input#phone.w2(name='phone', value='', type='text')
+          .row-fluid
+            .span12
+              .row-fluid
+                .span2
+                  label Verify Email Address*
+                .span4
+                  input#verifyemail.w2(name='verifyemail', value='', type='text')
+                .span2
+                  label State of residence (if in Australia)
+                .span4
+                  select#state(name='state')
+                    option(value='') Please Select
+                    option(value='NSW') New South Wales
+                    option(value='QLD') Queensland
+                    option(value='VIC') Victoria
+                    option(value='SA') South Australia
+                    option(value='WA') Western Australia
+                    option(value='TAS') Tasmania
+                    option(value='NT') Northern Territory
+                    option(value='ACT') Australian Capital Territory
+          .row-fluid
+            .span12
+              .row-fluid
+                .span2
+                  label Arrival Time*
+                .span4
+                  select#arrivaltime(name='arrivaltime')
+                    option(value='') Please Select
+                    option(value='1:00 am') 1:00 am
+                    option(value='2:00 am') 2:00 am
+                    option(value='3:00 am') 3:00 am
+                    option(value='4:00 am') 4:00 am
+                    option(value='5:00 am') 5:00 am
+                    option(value='6:00 am') 6:00 am
+                    option(value='7:00 am') 7:00 am
+                    option(value='8:00 am') 8:00 am
+                    option(value='9:00 am') 9:00 am
+                    option(value='10:00 am') 10:00 am
+                    option(value='11:00 am') 11:00 am
+                    option(value='12:00 pm') 12:00 pm
+                    option(value='1:00 pm') 1:00 pm
+                    option(value='2:00 pm') 2:00 pm
+                    option(value='3:00 pm') 3:00 pm
+                    option(value='4:00 pm') 4:00 pm
+                    option(value='5:00 pm') 5:00 pm
+                    option(value='6:00 pm') 6:00 pm
+                    option(value='7:00 pm') 7:00 pm
+                    option(value='8:00 pm') 8:00 pm
+                    option(value='9:00 pm') 9:00 pm
+                    option(value='10:00 pm') 10:00 pm
+                    option(value='11:00 pm') 11:00 pm
+                    option(value='12:00 am (midnight)') 12:00 am (midnight)
+                    option(value='Unsure') Unsure
+                .span6
+                  input#subscribe1(name='subscribe', value='true', checked='checked', type='checkbox')
+                  input(name='_subscribe', value='on', type='hidden')
+                  span.newsletter-text
+                    strong Please subscribe me to the newsletter.
+          .row-fluid
+            .span12
+              .row-fluid
+                .span3
+                  label Bedding Configuration*
+                .span4
+                  label.radio
+                    input#optionsRadios1(type='radio', name='optionsRadios', value='option1', checked='checked')
+                    | 1 queen and 2 singles
+                  label.radio
+                    input#optionsRadios2(type='radio', name='optionsRadios', value='option2')
+                    | 1 queen and 4 singles
+                .span5
+          .span12
+            p
+              | * Some hotels do not offer smoking rooms. Please refer to the Hotel Details of the individual hotel. Please indicate any other special requests (not guaranteed).
+            textarea.span7(rows='4')
+            p  limit 218 characters
+        div
+          h4
+            font(color='blue')
+              br
+              | Your booking
+          table.table
+            tbody
+              tr
+                td(colspan='2')
+                  b
+                    | Discovery Holiday Parks - Lake Bonney -
+                    a(target='_blank', href='#') see hotel details
+              tr
+                td(colspan='2') booking-detail-address:(exmaple)Lakeside  Drive, Barmera, SA 5345, Australia
+              tr.booking-detail
+                th.noborder(colspan='1') Check in: 
+                td.noborder(colspan='2') Sun, 5 May 2013 from 1400hrs
+              tr.booking-detail
+                th.noborder(colspan='1') Check in instructions: 
+                td.noborder(colspan='2')
+                  | Office opens 8.30am to 6.pm 7 days. Please advise when booking if late arrival or departure is likely.
+              tr.booking-detail
+                th.noborder(colspan='1') Check out:
+                td.noborder(colspan='2') Mon, 6 May 2013  by 1000hrs
+              tr.booking-detail
+                th.noborder(colspan='1') No. of nights: 
+                td.noborder(colspan='2') 1
+              tr.booking-detail
+                th.noborder(colspan='1') No. of guests: 
+                td.noborder(colspan='2')
+                  | 2 adults
+                  b
+                    a(target='_blank', href='#') add extra guests
+              tr.booking-detail
+                th.noborder(colspan='1') Room: 
+                td.noborder(colspan='2') Standard Holiday Cottage
+              tr.booking-detail
+                th.noborder(colspan='1') Description: 
+                td.noborder(colspan='2')
+                  | Standard holiday cabins with two bedrooms, great for family & friends,these units are fully self contained with reverse cycle air con and plenty of space. Enjoy your home away from home holiday park experience. Single linen required.
+              tr.booking-detail
+                th.noborder(colspan='1')
+                  span.cancellabel Cancellations and changes: 
+                td.noborder(colspan='2')
+                  | Cancellations or changes to bookings for this room will forfeit the full amount of the first changed or cancelled night.
+              tr.booking-detail
+                td.noborder(colspan='3')
+                  ul
+              tr
+                td.lineitem(colspan='1')
+                td.lineitem(colspan='1') Accommodation
+                td.amount(width='20%')
+                  b
+                    | 109.00
+              tr
+                td.lineitem(colspan='1')
+                td.lineitem(colspan='1')
+                  | Booking Fee (non-refundable)
+                td.amount(width='20%')
+                  b
+                    | 5.50
+              tr.total
+                td.summary Total cost
+                td(colspan='1')  
+                td.amount(width='20%')
+                  span.fare
+                    | AUD $
+                    strong 114.50
+        div
+          h4
+            font(color='blue')
+              br
+              | Payment Details
+          hr
+          .row-fluid
+            .span12
+              .row-fluid
+                .span2
+                  label Credit card number*
+                .span4
+                  input#ccnum.w2(name='ccnum', value='', autocomplete='off', type='text')
+                .span3
+                  label Type of credit card*
+                .span3
+                  select#cctype.w2(name='cctype')
+                    option(value='AX') American Express
+                    option(value='DC') Diners Club
+                    option(value='CA') Mastercard
+                    option(value='VI', selected='selected') Visa
+          hr
+          .row-fluid
+            .span12
+              .row-fluid
+                .span3
+                  label Name on card
+                .span9
+                  input#ccname.span9(name='ccname', value='', autocomplete='off', type='text')
+          .row-fluid
+            .span12
+              .row-fluid
+                .span3
+                  label Card expiry MM/YYYY*
+                .span5
+                  select#ccmonth.span2(name='ccmonth')
+                    option(value='')
+                    option(value='1') 01
+                    option(value='2') 02
+                    option(value='3') 03
+                    option(value='4') 04
+                    option(value='5') 05
+                    option(value='6') 06
+                    option(value='7') 07
+                    option(value='8') 08
+                    option(value='9') 09
+                    option(value='10') 10
+                    option(value='11') 11
+                    option(value='12') 12
+                  | /
+                  select#ccyear.span2(name='ccyear')
+                    option(value='')
+                    option(value='2013') 2013
+                    option(value='2014') 2014
+                    option(value='2015') 2015
+                    option(value='2016') 2016
+                    option(value='2017') 2017
+                    option(value='2018') 2018
+                    option(value='2019') 2019
+                    option(value='2020') 2020
+                    option(value='2021') 2021
+                    option(value='2022') 2022
+                .span2
+                  label Verification code
+                .span2
+                  input#ccvc.span5(name='ccvc', value='', size='4', autocomplete='off', type='text')
+                  a(target='_blank', href='#') What's this?
+          hr
+          .span12
+            input#accepttc1(name='accepttc', value='true', type='checkbox')
+            input(name='_accepttc', value='on', type='hidden')
+            | I have read, understood and agree to the rules in the links above for each of my itinerary items and I have read, understood and agree to the travel.com.au booking
+            a(target='_blank', href='#') terms
+            | .
+            br
+          .span12
+            button#btn_bookpay.btn.btn-warning.btn-large.pull-right(type='submit', value='Submit')
+              | Proceed with travel booking
+      br
+      br
+      br
+      br
+      br
+      br
+      br
+      br
+      br
+      br
+      br
+      br
+      br
+      br
+      br
+    script(src='http://code.jquery.com/jquery.js')
+    script(src='js/bootstrap.min.js')
+

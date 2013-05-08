@@ -1,0 +1,76 @@
+!!! 5
+html
+  head
+    title Travel
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(href='/stylesheets/bootstrap.min.css', rel='stylesheet', media='screen')
+  body
+    .container
+      .navbar
+        .navbar-inner
+          a.brand(href='#') Quick Search
+          button.btn.pull-right(type='submit') Search
+          form.navbar-form
+            input.search-query.span8(type='text', placeholder='Search')
+      .row-fluid
+        .span12
+          .row-fluid
+            .span5
+              form.form-horizontal
+                center
+                  strong Country
+                select.span12
+                  option 1
+                  option 2
+                  option 3
+                  option 4
+                  option 5
+                  option 6
+                center
+                  strong Region/City
+                select.span12(multiple='multiple')
+                  option 10
+                  option 11
+                  option 12
+                  option 13
+                  option 14
+                  option 15
+                  option 16
+                  option 17
+                  option 18
+                  option 19
+            div
+              .row-fluid
+                .span7
+                  form.form-horizontal
+                    .control-group.pull-left
+                      label.control-label(for='inputCheckIn') Check In Date
+                      .controls
+                        input#inputCheckIn.input-xlarge(type='text', placeholder='29/04/2013')
+                      label.control-label(for='inputCheckOut') Check Out Date
+                      .controls
+                        input#inputCheckOut.input-xlarge(type='text', placeholder='29/04/2013')
+                    .control-group.pull-left
+                      label.control-label(for='inputNumOfNights') NO. of nights
+                      .controls
+                        input#inputNumOfNights.input-mini(type='text', placeholder='1')
+                      label.control-label(for='inputNumOfGuests') NO. of guests
+                      .controls
+                        input#inputNumGuests.input-mini(type='text', placeholder='1')
+                    .control-group.pull-left
+                      label.control-label(for='inputMinStars') Min Stars of Hotel
+                      .controls
+                        select
+                          option Min Stars of Hotel
+                          option 1
+                          option 1
+                          option 1
+                          option 1
+                          option 1
+                    .control-group.pull-left
+                      .controls
+                        button.btn(type='submit') search
+                div
+    script(src='http://code.jquery.com/jquery.js')
+    script(src='js/bootstrap.min.js')
+
